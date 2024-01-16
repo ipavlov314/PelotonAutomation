@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
 		Text(viewModel.pelotonTitle)
 			.font(.largeTitle)
-			.accessibilityIdentifier("greeting-text")
+			.accessibilityIdentifier(ContentAccessibilityIds.greetingText.rawValue)
 			.padding()
 		Button {
 			viewModel.transformation()
@@ -27,13 +27,15 @@ struct ContentView: View {
 		.frame(width: 200)
 		.background(.red)
 		.cornerRadius(5.0)
+		.accessibilityIdentifier(ContentAccessibilityIds.button.rawValue)
+
 		if !viewModel.imageHidden {
 			Spacer()
 			Image(viewModel.pelotonImage)
 				.resizable()
 				.scaledToFit()
+				.accessibilityIdentifier(ContentAccessibilityIds.peloImage.rawValue)
 		}
-
 		Spacer()
     }
 }
