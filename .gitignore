@@ -1,0 +1,110 @@
+# Xcode
+.DS_Store
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/
+
+# Swift Package Manager
+.Packages/
+.build/
+
+# Carthage
+/Carthage
+/carthage-build/
+
+# CocoaPods
+/Pods/
+/*.lock
+
+# fastlane
+/fastlane/report.xml
+/fastlane/Preview.html
+/fastlane/screenshots
+/fastlane/test_output
+
+# Generated files
+DerivedData/
+.build/
+
+# Playgrounds
+.playground/
+
+# Swift Package Manager
+.checkouts/
+
+# macOS
+.idea/
+.project/
+xcuserdata/
+*.xcodeproj/
+*.xcworkspace/
+
+# SwiftPM
+.build/
+Packages/
+
+# Xcode
+.DS_Store
+*/xcuserdata/
+*.xcuserdatad/
+*.xcworkspace/
+*.xcproj/
+
+# Playgrounds
+.playground/
+/*.xcworkspace/
+
+# Swift Package Manager
+.build/
+Packages/
+
+# CocoaPods
+/Pods/
+/Pods.xcodeproj/
+
+# Carthage
+/Carthage
+/Carthage/Checkouts
+
+# Fastlane
+/Fastlane/report.xml
+/Fastlane/Preview.html
+/Fastlane/screenshots/
+/Fastlane/test_output/
+
+# Xcode
+.DS_Store
+*.swp
+*~.nib
+*~.xib
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/
+xcuserdata/
+*.xccheckout
+*.xcuserstate
+project.xcworkspace/
+xcshareddata/
+DerivedData/
+.idea/
+
+# Build files
+build/
+*.o
+*.pyc
+
+# Subversion
+.svn/
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+/Pods/
+Podfile.lock
+
+# Carthage
+/Carthage/Checkouts
+/Carthage/Build
