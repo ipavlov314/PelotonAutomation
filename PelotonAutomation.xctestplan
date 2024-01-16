@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "7DBDEBA0-6C22-4A9B-9DA1-E72AFB96520E",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PelotonAutomation.xcodeproj",
+      "identifier" : "F9E547DD2AE8980200B58689",
+      "name" : "PelotonAutomation"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PelotonAutomation.xcodeproj",
+        "identifier" : "F9E547F72AE8980300B58689",
+        "name" : "PelotonAutomationUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
