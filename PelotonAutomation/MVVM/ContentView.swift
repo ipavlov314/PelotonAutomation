@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-
-	@State private var imageHidden = true
+	@StateObject private var viewModel = ContentViewModel()
 
     var body: some View {
-
-		Text("Peloton XCUITest Automation Challenge")
+		Text(viewModel.pelotonTitle)
 			.font(.largeTitle)
 			.accessibilityIdentifier("greeting-text")
 			.padding()
-
 		Button {
-			imageHidden.toggle()
+			viewModel.transformation()
 		} label: {
-
-			Text(imageHidden ? "Tap to Reveal" : "Tap to Hide")
+			Text(viewModel.buttonLabel)
 				.font(.title2)
 				.bold()
 				.tint(.black)
@@ -31,10 +27,11 @@ struct ContentView: View {
 		.frame(width: 200)
 		.background(.red)
 		.cornerRadius(5.0)
-
-		if !imageHidden {
+		if !viewModel.imageHidden {
 			Spacer()
-			Image("Peloton Logo").resizable().scaledToFit()
+			Image(viewModel.pelotonImage)
+				.resizable()
+				.scaledToFit()
 		}
 
 		Spacer()

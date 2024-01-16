@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		90C3748D2B570D4600C747C9 /* PelotonUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3748C2B570D4600C747C9 /* PelotonUnitTests.swift */; };
+		90C374952B57281000C747C9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C374942B57281000C747C9 /* ContentViewModel.swift */; };
 		F9E547E22AE8980200B58689 /* PelotonAutomationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E547E12AE8980200B58689 /* PelotonAutomationApp.swift */; };
 		F9E547E42AE8980200B58689 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E547E32AE8980200B58689 /* ContentView.swift */; };
 		F9E547E62AE8980300B58689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E547E52AE8980300B58689 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		90C3748A2B570D4600C747C9 /* PelotonUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PelotonUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C3748C2B570D4600C747C9 /* PelotonUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PelotonUnitTests.swift; sourceTree = "<group>"; };
+		90C374942B57281000C747C9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		F993570D2AE950AD006E4860 /* PelotonAutomation.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PelotonAutomation.xctestplan; sourceTree = "<group>"; };
 		F9E547DE2AE8980200B58689 /* PelotonAutomation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PelotonAutomation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E547E12AE8980200B58689 /* PelotonAutomationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PelotonAutomationApp.swift; sourceTree = "<group>"; };
@@ -78,6 +80,15 @@
 			path = PelotonUnitTests;
 			sourceTree = "<group>";
 		};
+		90C374932B5727F600C747C9 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				F9E547E32AE8980200B58689 /* ContentView.swift */,
+				90C374942B57281000C747C9 /* ContentViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 		F9E547D52AE8980200B58689 = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +113,8 @@
 		F9E547E02AE8980200B58689 /* PelotonAutomation */ = {
 			isa = PBXGroup;
 			children = (
+				90C374932B5727F600C747C9 /* MVVM */,
 				F9E547E12AE8980200B58689 /* PelotonAutomationApp.swift */,
-				F9E547E32AE8980200B58689 /* ContentView.swift */,
 				F9E547E52AE8980300B58689 /* Assets.xcassets */,
 				F9E547E72AE8980300B58689 /* Preview Content */,
 			);
@@ -265,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E547E42AE8980200B58689 /* ContentView.swift in Sources */,
+				90C374952B57281000C747C9 /* ContentViewModel.swift in Sources */,
 				F9E547E22AE8980200B58689 /* PelotonAutomationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
