@@ -33,6 +33,19 @@
             default = "YES">
          </TestPlanReference>
       </TestPlans>
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "90C374892B570D4600C747C9"
+               BuildableName = "PelotonUnitTests.xctest"
+               BlueprintName = "PelotonUnitTests"
+               ReferencedContainer = "container:PelotonAutomation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
