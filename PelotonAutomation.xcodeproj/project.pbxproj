@@ -11,6 +11,10 @@
 		90C374952B57281000C747C9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C374942B57281000C747C9 /* ContentViewModel.swift */; };
 		90C374972B573D0500C747C9 /* ContentAccessibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C374962B573D0500C747C9 /* ContentAccessibilityIds.swift */; };
 		90C3749A2B573F9300C747C9 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C374992B573F9300C747C9 /* Element.swift */; };
+		90ED8DA12B90D622007D4049 /* XCUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED8DA02B90D622007D4049 /* XCUIApplication.swift */; };
+		90ED8DA42B90D67F007D4049 /* ArgumentForLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED8DA32B90D67F007D4049 /* ArgumentForLaunch.swift */; };
+		90ED8DA62B90D764007D4049 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED8DA52B90D764007D4049 /* XCTestCase.swift */; };
+		90ED8DA72B90D83A007D4049 /* ArgumentForLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED8DA32B90D67F007D4049 /* ArgumentForLaunch.swift */; };
 		F9E547E22AE8980200B58689 /* PelotonAutomationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E547E12AE8980200B58689 /* PelotonAutomationApp.swift */; };
 		F9E547E42AE8980200B58689 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E547E32AE8980200B58689 /* ContentView.swift */; };
 		F9E547E62AE8980300B58689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E547E52AE8980300B58689 /* Assets.xcassets */; };
@@ -41,6 +45,9 @@
 		90C374942B57281000C747C9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		90C374962B573D0500C747C9 /* ContentAccessibilityIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAccessibilityIds.swift; sourceTree = "<group>"; };
 		90C374992B573F9300C747C9 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		90ED8DA02B90D622007D4049 /* XCUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIApplication.swift; sourceTree = "<group>"; };
+		90ED8DA32B90D67F007D4049 /* ArgumentForLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentForLaunch.swift; sourceTree = "<group>"; };
+		90ED8DA52B90D764007D4049 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		F993570D2AE950AD006E4860 /* PelotonAutomation.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PelotonAutomation.xctestplan; sourceTree = "<group>"; };
 		F9E547DE2AE8980200B58689 /* PelotonAutomation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PelotonAutomation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E547E12AE8980200B58689 /* PelotonAutomationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PelotonAutomationApp.swift; sourceTree = "<group>"; };
@@ -98,8 +105,18 @@
 			isa = PBXGroup;
 			children = (
 				90C374992B573F9300C747C9 /* Element.swift */,
+				90ED8DA02B90D622007D4049 /* XCUIApplication.swift */,
+				90ED8DA52B90D764007D4049 /* XCTestCase.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		90ED8DA22B90D664007D4049 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				90ED8DA32B90D67F007D4049 /* ArgumentForLaunch.swift */,
+			);
+			path = TestData;
 			sourceTree = "<group>";
 		};
 		F9E547D52AE8980200B58689 = {
@@ -145,6 +162,7 @@
 		F9E547FB2AE8980300B58689 /* PelotonAutomationUITests */ = {
 			isa = PBXGroup;
 			children = (
+				90ED8DA22B90D664007D4049 /* TestData */,
 				90C374982B573F7900C747C9 /* Extensions */,
 				F9E547FC2AE8980300B58689 /* PelotonAutomationUITests.swift */,
 			);
@@ -290,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E547E42AE8980200B58689 /* ContentView.swift in Sources */,
+				90ED8DA72B90D83A007D4049 /* ArgumentForLaunch.swift in Sources */,
 				90C374972B573D0500C747C9 /* ContentAccessibilityIds.swift in Sources */,
 				90C374952B57281000C747C9 /* ContentViewModel.swift in Sources */,
 				F9E547E22AE8980200B58689 /* PelotonAutomationApp.swift in Sources */,
@@ -300,8 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90ED8DA62B90D764007D4049 /* XCTestCase.swift in Sources */,
 				90C3749A2B573F9300C747C9 /* Element.swift in Sources */,
+				90ED8DA12B90D622007D4049 /* XCUIApplication.swift in Sources */,
 				F9E547FD2AE8980300B58689 /* PelotonAutomationUITests.swift in Sources */,
+				90ED8DA42B90D67F007D4049 /* ArgumentForLaunch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

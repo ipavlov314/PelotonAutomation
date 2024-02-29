@@ -8,33 +8,24 @@
 import XCTest
 
 final class PelotonAutomationUITests: XCTestCase {
+	let app: XCUIApplication = .init()
+	lazy var peloImage: XCUIElement = app.images["peloImage"]
 
-    override func setUpWithError() throws {
-		let app = XCUIApplication()
-		continueAfterFailure = false
+	func testHappyPath() {
+		givenLaunchApp(preconditions: [.showPeloIcon])
+		peloImage.assertExistence()
+	}
+	
+	func testNegativeCase() {
+		givenLaunchApp()
+		peloImage.assertExistence()
+	}
+	
+	func testExample() {
+		app.launchArguments += ["works"]
 		app.launch()
-    }
-
-    override func tearDownWithError() throws {}
-}
-
-extension PelotonAutomationUITests {
-
-	/// 1. Confirm the text 'Peloton XCUITest Automation Challenge' is visible on the screen
-	func testCorrectTitleIsVisible() {
-		XCTFail("Write or record your code here")
+		
+		let newTitle = app.staticTexts["WORKS!"]
+		newTitle.assertExistence()
 	}
-
-	/// 2a. Confirm the button 'Tap to Reveal' / 'Tap to Hide' is present on the screen
-	/// 2b. Confirm that it is tappable, and tap it twice
-	func testButtonIsPresentAndTapItTwice() {
-		XCTFail("Write or record your code here")
-	}
-
-	/// 3. Confirm that when the button 'Tap to Reveal' / 'Tap to Hide' is tapped
-	/// the Peloton image is 'revealed' or 'hidden'
-	func testWhenButtonIsTappedImageIsRevealedOrHidden() {
-		XCTFail("Write or record your code here")
-	}
-
 }
