@@ -15,4 +15,8 @@ public extension XCTestCase {
 	func givenLaunchApp() {
 		XCUIApplication().launch()
 	}
+	
+	func path(_ id: AccessibilityIdentifying) -> String {
+		id.rawValue
+	}
 }

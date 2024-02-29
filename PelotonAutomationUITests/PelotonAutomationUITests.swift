@@ -9,7 +9,7 @@ import XCTest
 
 final class PelotonAutomationUITests: XCTestCase {
 	let app: XCUIApplication = .init()
-	lazy var peloImage: XCUIElement = app.images["peloImage"]
+	lazy var peloImage: XCUIElement = app.images[path(.contentAids.peloImage)]
 
 	func testHappyPath() {
 		givenLaunchApp(preconditions: [.showPeloIcon])

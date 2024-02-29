@@ -15,6 +15,7 @@
 		90ED8DA42B90D67F007D4049 /* ArgumentForLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED8DA32B90D67F007D4049 /* ArgumentForLaunch.swift */; };
 		90ED8DA62B90D764007D4049 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED8DA52B90D764007D4049 /* XCTestCase.swift */; };
 		90ED8DA72B90D83A007D4049 /* ArgumentForLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED8DA32B90D67F007D4049 /* ArgumentForLaunch.swift */; };
+		90ED8DA82B90EC06007D4049 /* ContentAccessibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C374962B573D0500C747C9 /* ContentAccessibilityIds.swift */; };
 		F9E547E22AE8980200B58689 /* PelotonAutomationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E547E12AE8980200B58689 /* PelotonAutomationApp.swift */; };
 		F9E547E42AE8980200B58689 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E547E32AE8980200B58689 /* ContentView.swift */; };
 		F9E547E62AE8980300B58689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E547E52AE8980300B58689 /* Assets.xcassets */; };
@@ -320,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90ED8DA62B90D764007D4049 /* XCTestCase.swift in Sources */,
+				90ED8DA82B90EC06007D4049 /* ContentAccessibilityIds.swift in Sources */,
 				90C3749A2B573F9300C747C9 /* Element.swift in Sources */,
 				90ED8DA12B90D622007D4049 /* XCUIApplication.swift in Sources */,
 				F9E547FD2AE8980300B58689 /* PelotonAutomationUITests.swift in Sources */,
