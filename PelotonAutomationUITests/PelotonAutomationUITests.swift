@@ -22,8 +22,12 @@ final class PelotonAutomationUITests: XCTestCase {
 	}
 	
 	func testExample() {
+		// Pass argument
 		app.launchArguments += ["works"]
 		app.launch()
+		
+		// Check for a argument
+//		ProcessInfo.processInfo.arguments.contains("works") ? "WORKS!" : "Peloton XCUITest Automation
 		
 		let newTitle = app.staticTexts["WORKS!"]
 		newTitle.assertExistence()

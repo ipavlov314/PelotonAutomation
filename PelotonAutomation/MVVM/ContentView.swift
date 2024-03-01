@@ -13,7 +13,6 @@ struct ContentView: View {
     var body: some View {
 		Text(viewModel.pelotonTitle)
 			.font(.largeTitle)
-//			.accessibilityIdentifier(ContentAccessibilityIds.greetingText.rawValue)
 			.assignAccessibilityIdentifier(.contentAids.greetingText)
 			.padding()
 		Button {
@@ -28,18 +27,13 @@ struct ContentView: View {
 		.frame(width: 200)
 		.background(.red)
 		.cornerRadius(5.0)
-//		.accessibilityIdentifier(ContentAccessibilityIds.button.rawValue)
 		.assignAccessibilityIdentifier(.contentAids.button)
 		
-#if DEBUG
-		let showImage: Bool = UITestPreconditions.pass(arguments: .showPeloIcon) ? viewModel.imageHidden : !viewModel.imageHidden
-#endif
-		if showImage {
+		if !viewModel.imageHidden {
 			Spacer()
 			Image(viewModel.pelotonImage)
 				.resizable()
 				.scaledToFit()
-//				.accessibilityIdentifier(ContentAccessibilityIds.peloImage.rawValue)
 				.assignAccessibilityIdentifier(.contentAids.peloImage)
 		}
 		Spacer()
