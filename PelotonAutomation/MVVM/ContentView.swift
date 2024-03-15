@@ -11,32 +11,12 @@ struct ContentView: View {
 	@StateObject private var viewModel = ContentViewModel()
 	
     var body: some View {
-		Text(viewModel.pelotonTitle)
-			.font(.largeTitle)
-			.assignAccessibilityIdentifier(.contentAids.greetingText)
-			.padding()
-		Button {
-			viewModel.transformation()
-		} label: {
-			Text(viewModel.buttonLabel)
-				.font(.title2)
-				.bold()
-				.tint(.black)
+		VStack {
+			ForEach(0..<10) { _ in
+				Text(viewModel.pelotonTitle)
+			}
+			Text("other one")
 		}
-		.padding(10)
-		.frame(width: 200)
-		.background(.red)
-		.cornerRadius(5.0)
-		.assignAccessibilityIdentifier(.contentAids.button)
-		
-		if !viewModel.imageHidden {
-			Spacer()
-			Image(viewModel.pelotonImage)
-				.resizable()
-				.scaledToFit()
-				.assignAccessibilityIdentifier(.contentAids.peloImage)
-		}
-		Spacer()
     }
 }
 
