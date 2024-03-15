@@ -25,13 +25,13 @@ public extension XCTestCase {
 		case hardAssertion, softAssertion
 	}
 	
-	func whenIUse(_ type: AssertionType, action: () ->()) {
-		givenSet(to: type)
+	func whenIUse(_ type: AssertionType, action: () -> Void) {
+		givenSetAssertionType(to: type)
 		action()
-		type == .hardAssertion ? givenSet(to: .softAssertion) : givenSet(to: .hardAssertion)
+		type == .hardAssertion ? givenSetAssertionType(to: .softAssertion) : givenSetAssertionType(to: .hardAssertion)
 	}
 	
-	func givenSet(to types: AssertionType) {
+	func givenSetAssertionType(to types: AssertionType) {
 		switch types {
 		case .hardAssertion:
 			continueAfterFailure = false

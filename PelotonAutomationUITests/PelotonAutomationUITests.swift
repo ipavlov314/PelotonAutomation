@@ -38,9 +38,7 @@ final class PelotonAutomationUITests: XCTestCase {
 		app.launch()
 		
 		let list = app.staticTexts.allElementsBoundByIndex
-		let otherOne = app.staticTexts["other one error"]
-		
-		
+		let otherOne = app.staticTexts["other one"]
 		
 		whenIMeasureExecutionTime {
 			whenIUse(.softAssertion) {
@@ -49,7 +47,7 @@ final class PelotonAutomationUITests: XCTestCase {
 				// assert button 1
 				// assert button 2
 				// assert etc
-//				list.forEach { element in element.assertExistence(isElementStatic: true) }
+				list.forEach { element in element.assertExistence(isElementStatic: true) }
 				otherOne.assertExistence(isElementStatic: true)
 			}
 		}

@@ -12,7 +12,7 @@ struct ContentView: View {
 	
     var body: some View {
 		VStack {
-			ForEach(0..<10) { _ in
+			ForEach(0..<100) { _ in
 				Text(viewModel.pelotonTitle)
 			}
 			Text("other one")
